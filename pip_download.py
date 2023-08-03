@@ -3,8 +3,8 @@ import subprocess
 
 def pip_download(
     package=None,
-    python_version="3.8.9",
-    dest="./downloaded"
+    python_version="3",
+    dest="./downloaded_packages"
 ):
     # List of platform tags
     platform_tags = [
@@ -53,16 +53,20 @@ def pip_download(
             print(f"Error downloading packages for platform {platform}: {e}")
             print(e.stderr)
 
-# Commented out the argument parser lines at the end
-# import argparse
-# parser = argparse.ArgumentParser(description="Download package for specific platform and Python version")
-# parser.add_argument("--package", help="Package name and version")
-# parser.add_argument("--python-version", default="3.8.9", help="Python version (default: 3.8.9)")
-# parser.add_argument("--dest", default="./downloaded", help="Destination directory (default: ./downloaded)")
-# args = parser.parse_args()
-
-
 
 if __name__ == "__main__":
-    # Commented out the execution of the function
-    pip_download(args.package, args.python_version, args.dest)
+    import argparse
+    
+    parser = argparse.ArgumentParser(description="Download package for specific platform and Python version")
+    parser.add_argument("--package", help="Package name and version")
+    parser.add_argument("--python-version", default="3.8.9", help="Python version (default: 3.8.9)")
+    parser.add_argument("--dest", default="./downloaded_packages", help="Destination directory (default: ./downloaded_packages)")
+    # parser.add_argument("-r", default="requirements.txt", help="Read package from requirements file (default: requirements.txt)")
+    
+    args = parser.parse_args()
+    
+    pip_download(
+        package=args.package,
+        python_version=args.python_version,
+        dest=args.dest
+    )
