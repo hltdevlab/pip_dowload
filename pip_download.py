@@ -55,8 +55,6 @@ def pip_download(
 
 
 if __name__ == "__main__":
-    import argparse
-    
     parser = argparse.ArgumentParser(description="Download package for specific platform and Python version")
     parser.add_argument("--package", help="Package name and version")
     parser.add_argument("--python-version", default="3.8.9", help="Python version (default: 3.8.9)")
