@@ -1,0 +1,10 @@
+total 103M
+-rw-rw-rw-  1 codespace codespace  599 Oct  2 15:22 README.md
+-rw-rw-rw-  1 codespace codespace  553 Oct  2 14:17 chromadb_requirements.txt
+-rw-rw-rw-  1 codespace codespace  336 Oct  2 14:20 chromadb_requirements2.txt
+drwxrwxrwx+ 2 codespace codespace  20K Oct  2 15:21 downloaded_packages
+-rw-rw-rw-  1 codespace codespace  84M Oct  2 15:23 downloaded_packages__chromadb.zip
+-rw-rw-rw-  1 codespace codespace  19M Oct  2 13:41 downloaded_packages__langchain_all.zip
+-rw-rw-rw-  1 codespace root      2.2K Sep 10 10:49 pip_download.py
+-rw-rw-rw-  1 codespace codespace 2.5K Oct  2 14:15 r.txt
+-rw-rw-rw-  1 codespace codespace    0 Oct  2 15:26 size.txt
